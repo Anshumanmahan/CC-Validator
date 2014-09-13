@@ -17,8 +17,8 @@ int Length(char* ptr) {
   int res = 0;
   char* newptr = ptr;
   while(*newptr != '\0') {
-	newptr++;
-	res++;
+      newptr++;
+      res++;
   }
   return res;
 }
@@ -27,9 +27,9 @@ int main(int argc, char** argv) {
   char* card = (char*)malloc(sizeof(char) * MAX_CREDIT_CARD_SIZE); 
   if (argc == 1) {
     printf("Enter Credit Card Number: ");
-    scanf("%s",card);   
+    scanf("%s",card);
   } else {
-   card = argv[1]; 
+   card = argv[1];
   }
   int length = Length(card);
   int checksum = 0 ;
@@ -51,5 +51,3 @@ int main(int argc, char** argv) {
   }
   return 0;
 }
-	
-
